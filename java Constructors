@@ -1,0 +1,22 @@
+this: When class fields names and constructor/method parameters are same then we 
+      have to differentiate class fields with 'this' keyword from constructor/method 
+      parameters
+      
+this(): In a class calling one constructor to another constructor using this() method,
+        this process we can called constructor chaining.
+
+For example,
+
+
+public Department()//default
+{
+	this(110, "HR");
+	departmentId = 7878;
+	departmentName = "Deployment";
+}
+	
+public Department(int departmentId, String departmentName)//parameterized
+{
+	this.departmentId = departmentId;
+	this.departmentName = departmentName;
+}
